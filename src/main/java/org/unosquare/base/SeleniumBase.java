@@ -1,14 +1,19 @@
 package org.unosquare.base;
 
-import org.openqa.selenium.By;
+import com.beust.jcommander.Parameterized;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class SeleniumBase {
-    private WebDriver driver;
 
-    private SeleniumBase(WebDriver driver) {
-        this.driver = driver;
+
+    public static void main(String[] args) {
+
+
+        WebDriver driver = new ChromeDriver();
+        driver.get("https://www.unosquare.com/");
+
+
     }
 
 

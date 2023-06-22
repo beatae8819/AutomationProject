@@ -1,4 +1,12 @@
 package org.unosquare.pages;
 
-public class LoginPage {
+import org.openqa.selenium.WebDriver;
+import org.unosquare.base.SeleniumBase;
+
+public final class LoginPage extends SeleniumBase {
+
+    private WebDriver webDriver;
+
+
+
 }
